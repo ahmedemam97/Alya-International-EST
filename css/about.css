@@ -1,0 +1,180 @@
+:root {
+  --primary: #ff800f;
+  --secondary: #083889;
+  --light: #f6f7f8;
+  --dark: #010a35;
+}
+
+.btn {
+  border-radius: 5px;
+}
+
+.about-page {
+  padding: 50px 0 70px;
+}
+
+@media (max-width: 575px) {
+  .about-page {
+    padding: 50px 30px 70px;
+  }
+}
+
+.about-page .who {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.about-page .who .text {
+  flex: 1;
+  min-width: 250px;
+  text-align: end;
+}
+
+.about-page .who .text h2 {
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+.about-page .who .image-div {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  max-width: 700px;
+}
+
+.about-page .who .image-div img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px !important;
+  object-fit: cover;
+}
+
+#carouselHeader .carousel-item {
+  min-width: 250px;
+  max-width: 700px;
+  max-height: 400px;
+}
+
+/* الصور داخل الكاروسيل */
+#carouselHeader .carousel-item img {
+  width: 100%;
+  height: 400px; /* 👈 سبّت الارتفاع */
+  object-fit: cover; /* يخلي كل الصور تملأ نفس الإطار */
+  border-radius: 10px;
+}
+
+/* Experience */
+.experience {
+  padding: 50px 0 100px;
+}
+
+.experience .container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 100px;
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .experience .container {
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+  }
+  .experience .container .exp-div svg {
+    width: 50px !important;
+  }
+}
+
+.experience .container::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: -15px;
+  left: 0;
+  background: linear-gradient(90deg, #ff800f, #ff5e0f, #e6450f);
+  position: absolute;
+  transform: translateX(0%);
+}
+
+.experience .container .exp-div h4 {
+  color: var(--secondary);
+}
+
+.experience .container .exp-div svg {
+  color: var(--secondary);
+  width: 75px;
+  margin-bottom: 20px;
+}
+/* End Experience */
+
+/* Start Projects */
+.projects {
+  padding-bottom: 100px;
+}
+.projects .container .parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.projects .container .parent .show-project {
+  text-align: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .projects .container .parent {
+    flex-wrap: wrap;
+  }
+  .projects .container .parent .show-project {
+    margin-bottom: 30px;
+  }
+}
+
+.projects .container .parent .show-project h4 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.projects .container .parent .show-project .project-img img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 220px;
+}
+
+.experience .container .profile-btn {
+  text-align: center;
+}
+.modal.fade {
+  z-index: 10000000;
+}
+.modal-body {
+  max-height: 80vh;
+}
+.modal-body img {
+  max-width: 100%;
+  max-height: 60vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+/* End Projects */
+
+/* Contact Page */
+.contact-header {
+  /* text-align: end; */
+}
