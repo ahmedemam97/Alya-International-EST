@@ -129,7 +129,8 @@
             ["bank-albilad.png", "بنك البلاد"],
             ["othaim-logo.svg", "اسواق العثيم"],
             ["anwar-hospital.png", "مستشفي الانوار الطبي"],
-            ["saknai-hotel.png", "فندق سكناي"]
+            ["saknai-hotel.png", "فندق سكناي"],
+            ["nahdi.png", "صيدليات النهدي"],
         ];
 
         var client = document.getElementsByClassName("swiper-wrapper")[0];
