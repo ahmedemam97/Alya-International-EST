@@ -117,7 +117,6 @@
 
     const wrapper = document.querySelector(".swiper-wrapper");
 
-    // إضافة السلايدز
     clientsImages.forEach(([img, name]) => {
         const slide = `
             <div class="swiper-slide logo-fade">
@@ -148,7 +147,6 @@
         }
     });
 
-    // Fade-in Animation باستخدام IntersectionObserver
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
