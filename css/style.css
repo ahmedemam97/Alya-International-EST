@@ -472,7 +472,7 @@ html {
 }
 
 /*** Facts ***/
-.facts {
+/* .facts {
   position: relative;
 }
 
@@ -489,6 +489,77 @@ html {
   top: 0;
   left: 0;
   background: rgba(1, 10, 53, 0.8);
+} */
+
+/* Why Choose Us */
+.why-us {
+  background: linear-gradient(135deg, #f0f4f8, #d9e4ec);
+}
+
+.why-us .fadeInDown h2,
+.why-us .fadeInDown p {
+  color: white;
+}
+
+.why-card {
+  background: linear-gradient(135deg, #f0f4f8, #d9e4ec);
+  padding: 35px 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.why-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.18);
+}
+.why-card:hover p,
+.why-card:hover h5 {
+  color: #0a1a44;
+}
+
+.why-card .icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  background: #ff6f00;
+  color: #fff;
+  font-size: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.why-card .icon svg {
+  width: 35px;
+  height: 35px;
+  fill: #0a1a44;
+}
+
+.why-card:hover .icon {
+  background: #0a1a44;
+  transform: rotate(8deg) scale(1.1);
+}
+.why-card:hover .icon svg path {
+  fill: #fff;
+}
+
+.why-card h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.why-card p {
+  color: #6c757d;
+  font-size: 15px;
+  line-height: 1.8;
 }
 
 /* Map Div */
@@ -894,7 +965,7 @@ html {
   border-radius: 12px;
   margin: 0;
   padding: 10px 15px;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease !important;
   box-shadow: 6px 8px 12px -6px rgba(0, 0, 0, 0.1);
   color: #2c3e50;
 }
